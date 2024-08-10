@@ -12,7 +12,7 @@ function getSecretKeyFromUser(key: bigint){
 const key = getSecretKeyFromUser(stringToNumber("0x0db6adab06fF57252E2d6364ce6CCcC554320c9c"+ "  "));
 console.log('key: ', key);
 const secretKey = bigIntToString(key);
-console.log('secretKey:', secretKey)
+console.log('secretKey:', secretKey);
 
 
 function stringToNumber(str: string): bigint {
