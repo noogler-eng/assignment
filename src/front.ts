@@ -1,6 +1,10 @@
 import { ShamirsAlgoritm } from "./without";
 const sa = new ShamirsAlgoritm(3, 5);
 
+
+
+
+
 function getSecretKeyFromUser(key: bigint){
     const shares = sa.fetchingAllShare(key);
     console.log('shares: ', shares);
@@ -8,6 +12,10 @@ function getSecretKeyFromUser(key: bigint){
     console.log("Reconstructed Secret: ", reconstructed);
     return reconstructed;
 }
+
+
+
+
 
 const key = getSecretKeyFromUser(stringToNumber("0x0db6adab06fF57252E2d6364ce6CCcC554320c9c"+ "  "));
 console.log('key: ', key);
