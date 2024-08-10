@@ -47,7 +47,8 @@ class ShamirsAlgoritm {
 }
 // Create an instance of ShamirsAlgoritm with a 3/5 threshold
 const sa = new ShamirsAlgoritm(3, 5);
-// Fetch all shares for a secret value of 123
+// Fetch all shares for a secret value of 123456789987
+// assuming this is private key - 123456789987
 const shares = sa.fetchingAllShare(123456789987);
 // Reconstruct the secret using any 3 of the generated shares
 const reconstructed = sa.reconstruct(shares.slice(0, 3));
